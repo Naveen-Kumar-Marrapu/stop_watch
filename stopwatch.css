@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.bg-container{
+  background-color: #969284 ;
+  background-size: cover;
+  height:100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-card-container{
+  background-color: white;
+  border-radius: 10px;
+  width:70vw;
+  height:55vh;
+  padding:25px;
+  flex-wrap:wrap;
+}
+
+.timer-card{
+  box-sizing: border-box;
+  font-size:36px;  
+  color:white;
+  background-color: #366feb;
+  border-radius: 10px;
+  padding:10px;
+  font-weight:bold;
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+ 
+.button {
+  color:#ffffff;
+  border-radius: 15px;
+  padding:2px 20px;
+  border:none;
+  height:60px;
+  
+  margin:5px;
+  font-weight:600;
+  font-size:20px;
+}
+
+.bg-start-button {
+  background-color: #366feb;
+}
+
+.bg-stop-button {
+  background-color: #e8e6e1;
+  color:#366feb;
+}
+.bg-reset-button{
+  background-color: #e8e6e1;
+  color:#366feb;
+}
+.bg-add-button{
+  background-color: greenyellow;
+  width:80px;
+  border-radius: 50%;
+}
+.bg-sub-button{
+  background-color: rgb(238, 13, 13);
+  width:80px;
+  border-radius: 50%;
+}
+
+.day-completed{
+  font-weight:bold;
+  font-size:25px;
+  color:yellow;
+}
+.hide{
+  display: none;
+}
+
+@media (max-width:576px) {
+  .timer-card-container {
+
+      width: 95vw;
+      height: 55vh;
+
+  }
+
+}
+@media (min-width:992px) {
+  .timer-card-container {
+
+      width: 30vw;
+      height: 50vh;
+
+  }
+
+}
