@@ -177,7 +177,26 @@ startBtnEl.onclick=function(){
 
    };
 
-
-
-
 };
+
+let timer = document.getElementById("mnk")
+timer.style.color="red";
+console.log(timer.textContent)
+setInterval(()=>{
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let sec = date.getSeconds();
+    if(sec<10){
+        sec="0"+sec;
+    }
+    if(minutes<10){
+            minutes="0" + minutes;
+    }
+    if(hours<10){
+        hours="0"+hours;
+    }
+    let formattedDate= `${hours}:${minutes}:${sec}`
+    console.log(date);
+    timer.textContent = formattedDate;
+},1000);
